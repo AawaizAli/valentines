@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes or No</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #yesButton, #noButton {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 10%;
+        }
+        #gif {
+            margin-top: 20px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>YAYAYAYAYAY</h1>
+    <br>
+    <img id="gif" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2ZrM3Z3aG9hdWh4bGRmY2FjY2w1ajFveTZxY3YybDc1bnY0aWcxMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT39CQIcoWQXQ5peco/giphy.gif" alt="Funny GIF">
+
+    <script>
+        let yesButton = document.getElementById("yesButton");
+        function increaseYesSize() {
+            let currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
+            yesButton.style.fontSize = (currentSize + 50) + "px";
+        }
+        function goToYesPage() {
+            window.location.href = "yes.html";
+        }
+    </script>
+</body>
+</html>
